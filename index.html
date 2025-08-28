@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>3 Tabs Example</title>
+  <style>
+    .tabs {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .tab {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background: #f1f1f1;
+      margin-right: 2px;
+    }
+    .tab.active {
+      background: #fff;
+      font-weight: bold;
+    }
+    .tab-content {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background: #fff;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="tabs">
+    <div class="tab active" onclick="showTab(0)"> 1</div> 
+    <div class="tab" onclick="showTab(1)"> 2</div>
+    <div class="tab" onclick="showTab(2)"> 3</div>
+  </div>
+  <div id="tab-contents">
+    <div class="tab-content" style="display:block;">Content for Tab 1</div>
+    <div class="tab-content" style="display:block;">Content for Tab 2</div>
+    <div class="tab-content" style="display:block;">Content for Tab 3</div>
+    <div class="tab-content" style="display:block;">Content for Tab </div>
+  </div>
+  <script>
+    function showTab(index) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        contents[i].style.display = i === index ? 'block' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
