@@ -1,53 +1,57 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>3 Tabs Example</title>
-  <style>
-    .tabs {
-      display: flex;
-      cursor: pointer;
-      margin-bottom: 10px;
-    }
-    .tab {
-      padding: 10px 20px;
-      border: 1px solid #ccc;
-      border-bottom: none;
-      background: #f1f1f1;
-      margin-right: 2px;
-    }
-    .tab.active {
-      background: #fff;
-      font-weight: bold;
-    }
-    .tab-content {
-      border: 1px solid #ccc;
-      padding: 20px;
-      background: #fff;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Assignment</title>
 </head>
 <body>
-  <div class="tabs">
-    <div class="tab active" onclick="showTab(0)"> 1</div> 
-    <div class="tab" onclick="showTab(1)"> 2</div>
-    <div class="tab" onclick="showTab(2)"> 3</div>
-  </div>
-  <div id="tab-contents">
-    <div class="tab-content" style="display:block;">Content for Tab 1</div>
-    <div class="tab-content" style="display:block;">Content for Tab 2</div>
-    <div class="tab-content" style="display:block;">Content for Tab 3</div>
-    <div class="tab-content" style="display:block;">Content for Tab </div>
-  </div>
-  <script>
-    function showTab(index) {
-      const tabs = document.querySelectorAll('.tab');
-      const contents = document.querySelectorAll('.tab-content');
-      tabs.forEach((tab, i) => {
-        tab.classList.toggle('active', i === index);
-        contents[i].style.display = i === index ? 'block' : 'none';
-      });
-    }
-  </script>
+  
+<caption>Summer Vacation</caption>
+
+<table border="1">
+
+<tr>
+  <th>Location</th>
+  <th>Date</th>
+  <th>Description/Notes</th>
+</tr>
+
+<tr>
+<td>Sunset at Beach</td>
+<td>June 12, 2025</td>
+<td>Golden light over calm water, scattered seashells along the shore, and footprints leading towards the pier</td>
+</tr>
+
+<tr>
+<td>Moutain Ridge</td>
+<td>June 15,2025</td>
+<td>A clear view from the ridge after a morning hike, with pine trees and panoramic views of neighboring</td>
+</tr>
+
+<tr>
+<td>Riverfront</td>
+<td>June 18,2025</td>
+<td>Evening lights reflecting on the water while boats passed by, Quiet walkway and street music nearby.</td>
+</tr>
+
+<tr>
+<td>Row 4, Col 1</td>
+<td>Row 4, Col 2</td>
+<td>Row 4, Col 3</td>
+</tr>
+
+<tr>
+<td colspan="3"> &copy; 2025, Jonathan</td>
+</tr>
+
+</table>
+
+<img src="/IUPUIMascot.png" alt="IUPUIMascot">
+<img src="/Dev-Workshop-Logo.png" alt="devworkshop">
+
+
+
+
+
 </body>
 </html>
