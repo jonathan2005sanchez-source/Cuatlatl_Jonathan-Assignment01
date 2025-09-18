@@ -1,0 +1,68 @@
+h1 {
+
+    color: white;
+
+    font: Arial, sans-serif;  
+
+    font-size: 50px; 
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: red;
+
+margin: 10px 20px;
+
+border: 10px dotted black;
+
+padding-left: 30px;
+
+}
+
+/* Margin order: top right bottom left */
+
+.crazy-text {
+
+color: white;
+
+background-color: black;
+
+}
+
+/* using class start with "." then name of class */
+
+
+/* using id start with "#" then name of id */
+
+#one {
+    color white;
+
+}
+
+ol, li {
+ 
+    background-color: yellow;
+
+  border-color: black;
+
+    border-style: solid;
+}
+
+h3{
+    color: blue;
+margin: 10px 20px;}
+
+/* section parent that has h3 and p inside */
+section {
+
+    background-color: lightblue;
+
+border: 1px solid black;
+
+padding: 20px;
+
+}
+
+p { 
+    color: white;
+
+background-color: black;}
