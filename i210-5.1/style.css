@@ -1,0 +1,98 @@
+    /* Common styles for all boxes */
+    .box {
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+      border: 2px solid black;
+    }
+    .box1 { background: rgba(102, 128, 0, 0.621); }
+    .box2 { background: rgb(208, 170, 99); }
+    .box3 { background: rgb(40, 40, 190); }
+    .box4 { background: rgb(214, 128, 128); }
+
+    /* Give all containers some border and space */
+    .container {
+      border: 2px solid black;
+      margin-bottom: 30px;
+      height: 150px; /* enough height to show vertical alignment */
+      display: flex; /* all flex containers start here */
+    }
+
+    /* flex-direction: row (default, left to right */
+    .direction-row {
+      flex-direction: row; /* default direction */
+    }
+    /* row-reverse: (right to left) */
+    .direction-row-reverse {
+      flex-direction: row-reverse;
+    }
+    /* column (top to bottom) */
+    .direction-column {
+      flex-direction: column;
+    }
+
+    .direction-column-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .justify-center {
+      justify-content: center; /* default */
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .justify-around {
+      justify-content: space-around;
+    }
+
+    .justify-evenly {
+      justify-content: space-evenly;
+    }
+
+    .align-start {
+      align-items: flex-start; /* default */
+    }
+
+    .align-center {
+      align-items: center; A
+    }
+
+    .align-end { B
+      align-items: flex-end;
+    }
+
+    /* FLEX_WRAP */
+
+   .nowrap-narrow
+   { flex-wrap: nowrap;
+
+   }
+
+    .wrap
+    { flex-wrap: wrap;
+
+    }
+
+    .wrap-reverse
+    { flex-wrap: wrap-reverse;
+
+    }
+
+    .narrow
+    { width: 200px;
+      background-color: rgb(220, 219, 219);
+    }
+
+    .testing1
+    { height: 100px;
+      background-color: rgb(180, 219, 219);
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid rgb(0, 0, 0);
+
+    }
