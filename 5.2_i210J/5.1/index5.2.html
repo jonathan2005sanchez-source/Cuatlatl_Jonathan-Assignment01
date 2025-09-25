@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS_GridTeaching Examples</title>
+  <link rel="stylesheet" href="style1.css">
+
+
+
+</head>
+<body>
+<!-- using style also affects the layout -->
+  <h1 style="color: brown;">CSS Grid Step by Step Examples</h1>
+
+  <!-- STEP 1: GRID TEMPLATE COLUMNS -->
+  <h3>2 Columns of equal width</h3>
+  <div class="container grid-2">
+    <div class="box box1">1A</div>
+    <div class="box box2">2B</div>
+    <div class="box box3">EXTRA</div>
+    <div class="box box4">EXTRA</div>
+
+  </div>
+
+  <h3>3 Columns (1fr 1fr 2fr)</h3>
+  <div class="container grid-3">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <!-- <div class="box box4">EXTRA</div>
+    <div class="box box5">EXTRA</div>
+    <div class="box box6">EXTRA</div> -->
+   
+  </div>
+
+  <h3>4 equal columns</h3>
+  <div class="container grid-4">
+    <div class="box box1">1AWWW</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+  </div>
+
+  <!-- STEP 2: GRID TEMPLATE ROWS -->
+  <h3>2 Rows of equal height</h3>
+  <div class="container grid-2 rows-2">
+    <div class="box box1">1WHO</div>
+    <div class="box box2">2ARE</div>
+    <div class="box box3">3YOU</div>
+    <div class="box box4">4</div>
+  </div>
+
+  <h3>3 Rows, mixed heights</h3>
+  <div class="container grid-3 rows-3">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+  </div>
+
+  <!-- STEP 3: GAP -->
+  <h3>Grid gap example (20px)</h3>
+  <div class="container gap-example">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+  </div>
+
+  <!-- STEP 4: SPAN -->
+  <h3>Item spanning 2 columns</h3>
+  <div class="container span-columns">
+    <div class="box box1" style="grid-column: span 2;">1 (span 2 columns)</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+
+  <h3>Item spanning 2 rows</h3>
+  <div class="container span-rows">
+    <div class="box box1" style="grid-row: span 2;">1 (span 2 rows)</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+  </div>
+<br>    
+<br>  
+<br>  
+<br>
+<br>
+<br>
+<br>
+<br>  
+  <!-- STEP 5: JUSTIFY & ALIGN -->
+  <h3>justify-items: center (horizontal center in each cell)</h3>
+  <div class="container grid-3 justify-center">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <h3>align-items: center (vertical center in each cell)</h3>
+  <div class="container grid-3 align-center">
+    <div class="box box1">1WHY</div>
+    <div class="box box2">2IM</div>
+    <div class="box box3">3SMALL</div>
+  </div>
+
+  <h3>stretch (default)</h3>
+  <div class="container grid-3 stretch">
+    <div class="box box1">1oaknfpas</div>
+    <div class="box box2">2alekjfn</div>
+    <div class="box box3">3small</div>
+  </div>
+
+</body>
+</html>

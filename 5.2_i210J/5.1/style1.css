@@ -1,0 +1,115 @@
+/* ==========================================
+   COMMON STYLES FOR ALL BOXES
+   ========================================== */
+
+/* 
+  The .box class styles all individual grid items.
+  - color: white → makes the text inside the box white for contrast
+  - font-weight: bold → makes text easier to read
+  - padding: 20px → adds space inside each box so text is not cramped
+  - margin: 5px → adds space around each box to separate them visually
+  - text-align: center → centers the text horizontally in the box
+*/
+.box {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  background-color: grey;
+}
+
+/* Different colors for each box to make it easy for students to visually identify them */
+.box1 { background: green; }   /* First box: green */
+.box2 { background: orange; }  /* Second box: orange */
+.box3 { background: blue; }    /* Third box: blue */
+.box4 { background: red; }     /* Fourth box: red */
+.box5 { background: purple; }  /* Fifth box: purple */
+.box6 { background: brown; }   /* Sixth box: brown */
+
+/* ==========================================
+   COMMON STYLES FOR ALL CONTAINERS
+   ========================================== */
+
+/*
+  The .container class styles all grid containers.
+  - border: 2px solid black → makes the container visible
+  - margin-bottom: 30px → separates this container from the next container
+  - height: 250px → gives enough vertical space to show the grid items
+  - display: grid → makes this container a CSS Grid
+  - gap: 10px → adds 10px space between each grid item (row & column)
+*/
+.container {
+  border: 2px solid black;
+  margin-bottom: 30px;
+  height: 250px;
+  display: grid;      /* activate grid layout */
+  gap: 10px;          /* space between items */
+}
+
+/* Columns */
+
+
+  .grid-2 {
+
+    grid-template-columns: 1fr 1fr; 
+     /* Two columns: first is 1 part, second is 1 parts */
+  }
+
+  .grid-3 {
+
+    grid-template-columns: 1fr 1fr 2fr;
+      /* Three columns: first is 1 part, second is 1 part, third is 2 parts */
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4,1fr)
+      /* Four columns: each is 1 part */
+  }
+
+/* Rows */
+
+.row-2 {
+   grid-template-rows: 100px 100px; 
+  }
+
+  .row-3 {
+    grid-template-rows: 50px 150px 50px; 
+  }
+
+  /* GRID GAPS */
+
+  .gap-example {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px;
+    grid-gap: 20px;
+  }
+
+.span-columns {
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px 100px;
+  grid-column: span 2;
+}
+
+.span-rows {
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px 100px;
+  grid-row: span 2;
+}
+
+
+.justify-center {
+
+  justify-items: center;
+}
+
+.align-center {
+
+  align-items: center;
+}
+
+.stretch-both {
+
+ align-items: stretch;
+ justify-content: stretch;
+}
