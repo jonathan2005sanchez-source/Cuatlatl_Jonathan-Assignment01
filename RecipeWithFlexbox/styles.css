@@ -1,0 +1,117 @@
+/* TODO: Add your styles here */
+
+/* Given CSS rules below */
+body {
+   margin: 0;
+   font-family: Helvetica, sans-serif;
+}
+
+header {
+   border-bottom: 2px solid #93B5C6;
+   background-color: #DDEDAA;
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.logo {
+   color: #BD4F6C;
+   font-size: 18px;
+}
+
+.content {
+   margin: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+
+
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 70%;
+  gap: 20px;
+}
+
+.title {
+   border-bottom: 1px dashed #93B5C6;
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.title h1 {
+   color: #BD4F6C;
+}
+
+.title p {
+   color: #93B5C6;
+   margin-left: 30px;
+}
+
+.summary {
+   display: flex;
+   justify-content: space-evenly;
+   flex-grow: 1;
+   flex-basis: 100%;
+   gap: 20px;
+}
+
+.summary > div {
+   background-color: #DDEDAA;
+   border: 2px solid #93B5C6;
+   border-radius: 5px;
+   color: #BD4F6C;
+   padding: 5px;
+   width: 210px;
+   display: flex;
+justify-content: space-between;
+flex-direction: column;
+
+}
+.summary > div p {
+   margin: 6px 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.related-content {
+   margin-left: 200px;
+   flex-grow: .50;
+   flex-basis: 10%;
+}
+
+.related-content h2 {
+   font-size: 18px;
+}
+
+.ingredients, .directions {
+  flex-grow: 1;         /* allows them to grow if space is available */
+  flex-basis: 45%;  
+}
+
+.summary-text {
+   justify-content: space-evenly;
+   display: flex;
+   flex-grow: 1;
+   flex-basis: 100%;
+} 
+
+div p {
+   display: flex;
+   justify-content: space-between;
+   margin: 2px;
+}
+
+
+
+
+
+
+
+

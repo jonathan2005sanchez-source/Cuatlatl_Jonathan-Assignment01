@@ -1,0 +1,46 @@
+/* ============================================================
+ GENERAL LOOK (not important, just to make things visible)
+ ============================================================ */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+h1, h2 {
+  margin-top: 40px;
+}
+
+/* Common styles for demo boxes */
+.box, .round1, .round2, .round3, .round4,
+.grad1, .grad2, .grad3, .grad4, .grad5, .grad6, .grad7 {
+  width: 250px;
+  height: 80px;
+  margin: 20px 0;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+  color: black;
+}
+/* simple shadow: offset x and offset y */
+.shadow1 {
+  text-shadow: 5px 5px grey;
+}
+
+.shadow2 {
+  text-shadow: 5px 5px 3px grey;
+}
+
+.shadow3 {
+  text-shadow: -5px -5px 6px green;
+}
+
+.shadow4 {
+  text-shadow: 0 0 3px red;
+}
+
+.shadow5 
+{
+  text-shadow: 0 0 10px rgb(115, 0, 128), 10px 10px 3px rgb(0, 102, 128) 0 0 3px red;
+}
