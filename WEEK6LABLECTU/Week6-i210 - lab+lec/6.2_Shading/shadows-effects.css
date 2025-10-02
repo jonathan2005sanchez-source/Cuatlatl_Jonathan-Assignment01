@@ -9,6 +9,7 @@ body {
 
 h1, h2 {
   margin-top: 40px;
+  text-shadow: 2px 2px lightgrey;
 }
 
 /* Common styles for demo boxes */
@@ -43,4 +44,103 @@ h1, h2 {
 .shadow5 
 {
   text-shadow: 0 0 10px rgb(115, 0, 128), 10px 10px 3px rgb(0, 102, 128) 0 0 3px red;
+}
+
+#box1 {
+  background-color: yellow;
+  box-shadow: 5px 5px rgb(58, 58, 58);
+}
+
+#box2 {
+  background-color: green;
+  box-shadow: inset 5px 5px 5px black;
+}
+
+#box3 {
+  background-color: lightblue;
+  box-shadow: -5px -5px 3px rgb(149, 149, 149);
+}
+
+#box4 {
+  background-color: red;
+  box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
+}
+
+#box5 {
+  background-color: rgb(118, 71, 199);
+  box-shadow: 0 0 10px 5px rgb(230, 0, 255), 10px 10px 3px rgb(0, 204, 255);
+}
+
+/* ============================================================
+ ROUNDED CORNERS
+ ============================================================ */
+
+ /* Top left and bottom right corners rounded 
+ tl = top left, tr = top right, br = bottom right, bl = bottom left */
+
+ /* Ex. border-radius: TL, TR, BR, BL */
+
+ /* All corners rounded */
+.round1 {
+  border-radius: 15px;
+  background-color: lightblue;
+  box-shadow: 5px 5px grey;
+}
+.round2 {
+  border-radius: 40px 10px;
+  background-color: lightgreen;
+  box-shadow: inset 5px 5px grey;
+}
+.round3 {
+  border-radius: 0px 40px 30px 5px;
+  background-color: orange;
+  box-shadow: -5px -5px grey;
+}
+.round4 {
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: lightyellow;
+  box-shadow: 0 0 5px grey;
+}
+
+/* ============================================================
+ GRADIENT BACKGROUNDS
+ ============================================================ */
+
+/* Linear gradients */
+.grad1 {
+  background: linear-gradient(rgb(9, 145, 5), rgb(251, 219, 12));
+  box-shadow: 5px 5px grey;
+      color: azure;
+}
+
+.grad2 {
+  background: linear-gradient(to bottom left, rgb(60, 12, 251), rgb(226, 6, 6));
+    box-shadow: 5px 5px grey;
+    color: azure
+}
+
+.grad3 {
+  color : azure;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  box-shadow: 5px 5px grey;
+}
+
+.grad4 {
+  background: repeating-linear-gradient(to right, blue, rgb(1, 250, 238), yellow, green 50%);
+  box-shadow: 5px 5px grey;
+      color: azure;
+}
+
+.grad5 {
+  background: radial-gradient(yellow, red);
+}
+
+.grad6 {
+  background: radial-gradient(yellow 30%, red 70%);
+}
+
+.grad7 {
+  background: radial-gradient(circle, red 50%, yellow 30%);
+  box-shadow: 5px 5px grey;
 }
