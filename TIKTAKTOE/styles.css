@@ -1,0 +1,36 @@
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+#board div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border: 1px solid #b5cfee;
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+}
+
+.x {
+    color: red;
+}
+
+.o {
+    color: blue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
