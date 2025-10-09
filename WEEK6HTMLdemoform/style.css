@@ -39,3 +39,84 @@ select {
     padding: 5px;
     border: 1px solid #ccc;
 }
+
+input:focus, 
+select:focus {
+    border-color: #0d29ff;
+    outline: none;
+}
+
+input[type="radio"] 
+{
+    accent-color: #0d29ff;
+}
+
+input[type="radio"]:focus {
+    appearance: none;
+-webkit-appearance: none;
+width: 16px;
+height: 16px;
+border: 2px solid #0d29ff;
+border-radius: 2px;
+display: inline-block;
+position: relative;
+cursor: pointer;
+}
+
+input[type="radio"]:checked{
+
+    background-color: #0d29ff;
+}
+
+input[type="checkbox"] {
+    accent-color: blue;
+}
+
+input[type=submit] {
+    background-color: rgb(57, 190, 235);
+    color: white;
+    border: none;
+padding: 10px 15px;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #0d29ff;
+}
+
+/* Responsive Design, */
+
+@media (max-width: 700px) {
+    form {
+        width: 90%;
+        padding: 10px;
+        background-color: rgb(92, 145, 242);
+    }
+h2 {
+    font-size: 18px;
+}
+
+input[type="radio"]:checked{
+
+    background-color: #00cb55;
+}
+
+input[type=submit]:hover {
+    background-color: #0dff82;
+}
+
+input[type=submit] {
+    background-color: rgb(84, 57, 235);
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    border: dashed;
+padding: 10px 15px;
+border-radius: 4px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+
+}
