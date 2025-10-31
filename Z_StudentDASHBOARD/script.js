@@ -1,4 +1,4 @@
-document.write("word")
+document.write("abc")
 
 let student = {
     {name: "Robert", grade: 91},
@@ -33,3 +33,5 @@ for(let i = 0; i < student.length; i++) {
 output += "</ul>"
 
 document.getElementById("studentList").innerHTML = output;
+
+document.write( "AOBJFIOJQNOJFN" )

@@ -23,12 +23,17 @@ body {
 }
 
 .profile-pic {
+    margin-top: 25px;
     width: 200px;
     height: 200px;
     border-radius: 200px;
     border: 4px solid #6b6363;
     }
 
+    .profile-pic {
+        width: auto;
+ 
+    }
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -45,7 +50,7 @@ main {
     text-align: center;
 }
 
-h2, {
+h2 {
     color: #333;
     margin-top: 0;
     text-decoration: underline;    
@@ -55,8 +60,53 @@ h2, {
 
 
 
+* { box-sizing: border-box; }
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
 
 
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: 0.3s;
+  color: #000;  /* you can change this color to match your theme */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
 
 
 

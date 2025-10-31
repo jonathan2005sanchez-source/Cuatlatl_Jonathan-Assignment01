@@ -1,0 +1,9 @@
+{
+    
+"students" : [
+{"student": "Rahul" , "major": "Computer Science", "grade": 95},
+{"student": "Antia" , "major": "math", "grade": 88},
+{"student": "Sunil" , "major": "Computer", "grade": 92},
+{"student": "Priya" , "major": "Chemistry", "grade": 85}
+    ]
+}

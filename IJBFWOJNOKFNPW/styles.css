@@ -1,0 +1,48 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+    color: black;
+    padding: 20px;
+
+}
+
+h1 {
+    color:brown ;  
+}
+
+form {
+    background-color: rgb(255, 210, 64);
+    padding: 15px;
+    border: 1px solid black;
+
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: azure;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+ol {
+    margin-top: 20px;
+}
+
+li {
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    border-left: 5px solid rgb(175, 108, 108);
+}

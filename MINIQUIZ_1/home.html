@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Mini Quiz App</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <label>1. What is the capital of France?</label><br />
+        <input type="text" id="q1" placeholder="Your answer..." />
+      </div>
+
+      <div class="question">
+        <label>2. What is 5 + 3?</label><br />
+        <input type="text" id="q2" placeholder="Your answer..." />
+      </div>
+
+      <div class="question">
+        <label>3. What color do you get when you mix red and blue?</label><br />
+        <input type="text" id="q3" placeholder="Your answer..." />
+      </div>
+
+      <button type="button" id="submit-btn">Submit Answers</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
