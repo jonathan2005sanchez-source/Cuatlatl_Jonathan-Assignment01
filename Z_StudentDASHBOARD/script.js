@@ -1,37 +1,27 @@
-document.write("abc")
+window.onload = function() {
 
-let student = {
-    {name: "Robert", grade: 91},
-    {name: "lilith", grade: 91},
-    {name: "John", grade: 30},
-    {name: "Gary G.", grade: 30},
-    {name: "Jennifer", grade: 91},
+  const students = [
+    { name: "Alice Johnson", grade: 85 },
+    { name: "Brian Smith", grade: 72 },
+    { name: "Catherine Lee", grade: 59 },
+    { name: "Daniel Brown", grade: 91 },
+    { name: "Eva Martinez", grade: 66 }
+  ];
+
+  const showButton = document.getElementById("showButton");
+  const studentList = document.getElementById("studentList");
+
+  function displayStudents() {
+    studentList.innerHTML = ""; // clear previous content
+
+    students.forEach(student => {
+      const div = document.createElement("div");
+      const status = student.grade >= 70 ? "Pass" : "Fail";
+      div.textContent = `${student.name} - Grade: ${student.grade} - Status: ${status}`;
+      studentList.appendChild(div);
+    });
+  }
+
+  // Attach click event to button
+  showButton.addEventListener("click", displayStudents);
 };
-
-//console.log(student.length)
-
-let output = "<ul>";
-
-for(let i = 0; i < student.length; i++) {
-
-    let status = "";
-
-    if(student[i].grade >= 50){
-        status = "Passed"
-    } else {
-        status = "failed"
-    }
-
-    output += "<li>" + student[i].name + "- Grade: " + student[i].grade + "-" + status + "</li>";
-
-    console.log{"student:", student[i].name};
-    console.log{"grade", student[i].grade}
-    console.log{"status", status}
-
-}
-
-output += "</ul>"
-
-document.getElementById("studentList").innerHTML = output;
-
-document.write( "AOBJFIOJQNOJFN" )

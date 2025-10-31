@@ -1,0 +1,8 @@
+{
+    "students": [
+        { "name": "Alice Johnson", "major": "Computer Science", "grade": "A" },
+        { "name": "Brian Smith", "major": "Art & Design", "grade": "B+" },
+        { "name": "Carla Reyes", "major": "Biology", "grade": "A-" },
+        { "name": "David Lee", "major": "Engineering", "grade": "B" }
+    ]
+}
