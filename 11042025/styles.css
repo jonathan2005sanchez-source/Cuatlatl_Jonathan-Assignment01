@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-color: rgb(189, 189, 189);
+    color: black;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    Padding: 40px 20px;
+}
+
+h2 {
+margin-bottom: 20px;
+color: blue;
+font-size: 2rem;
+text-align: center;
+
+}
+
+#filterInput {
+    padding: 10px 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    outline: non;
+    transition: all 0.2s ease;
+}
+
+#filterInput:focus {
+border-color: #1648d2;
+box-shadow: 0 0 5px rgb(3, 3, 193);
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    background-color: black;
+    color: white;
+    font-size: .9 rem;
+    margin: 5px 6px 15px 0;
+    transition: all .2s ease; 
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#sortAcc, #sortDesc {
+    background-color: rgb(100, 100, 100);
+}
+
+#sortAcc:hover, #sortDesc:hover {
+    background-color: rgb(46, 86, 185);
+}
