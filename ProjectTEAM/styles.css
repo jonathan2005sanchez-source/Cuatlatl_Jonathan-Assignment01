@@ -1,10 +1,18 @@
+/* HOMEPAGESECTION START */
+.homepage00 {
+    background-color: rgb(195, 184, 184);
+}
 /* Navigation Bar */
-nav {
-    width: auto;
+nav { 
+    top: 0;
+    left: 0;
+    position: fixed;
+width: 100%;
   padding: 10px 20px;
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: whitesmoke;
 }
 
 nav a {
@@ -44,3 +52,65 @@ nav a:hover {
 .activePage {
     color:#ffd700 
 }
+/* Page text styling */
+.homepage01 {
+ text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homepage02 {
+     text-align: center;
+  margin-top: 100px;
+  font-size: 20px;
+  color: #333;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image styling */
+.home-image {
+margin-top: 30px;
+  display: block;
+  margin: 30px auto;
+  width: 60%;
+  max-width: 600px;
+  border-radius: 5px;
+}
+/* Footer styling */
+footer {
+
+  background: #182848;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 14px;
+  bottom: 0;
+  left: 0;
+}
+
+/* Center the member list */
+.member-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.member-list ul {
+  list-style-type: none; /* removes bullet points */
+  padding: 0;
+}
+
+.member-list li {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+
+/* HOMEPAGESECTION END */
