@@ -61,3 +61,45 @@ button:hover {
 #sortAcc:hover, #sortDesc:hover {
     background-color: rgb(46, 86, 185);
 }
+
+#userList {
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 4px 10px (0,0,0,0.5);
+padding: 20px;
+}
+
+#userList li {
+    padding: 15px;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease;
+}
+
+#userList li:last-child {
+border-bottom: none;
+}
+
+#userList li:hover {
+    background-color: #cecece;
+}
+
+#userList strong {
+    font-size: 1.1rem;
+    color: black;
+
+}
+
+#userList small {
+    display: block;
+    color: #000000;
+margin-top: 4px;
+}
+
+.controls input, 
+.controls button {
+    flex 0 0 auto;
+}
+

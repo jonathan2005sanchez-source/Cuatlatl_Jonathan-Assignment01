@@ -1,5 +1,5 @@
 // Initalize an empty array to store user data 
-let user ={};
+let user =[];
 
 const userlist = document.getElementById("userList");
 
@@ -9,9 +9,9 @@ fetch('http://jsonplaceholder.typicode.com/users')
 .then(response => response.json())
 .then(data => {
     // store fetch data in users array
-    users = data;
+    user = data;
     // function to display the user data 
-    renderUsers(users);
+    renderUsers(user);
 
 
 });
@@ -30,3 +30,19 @@ userlist.innerHTML = list.map(user =>`
 
 }
 
+// filler functionality
+
+// add a click event listener to filter button 
+
+
+document.getElementById("filterBtn").addEventListener("click" , () =>{
+
+const keyword = document.getElementById("filterInput").value.toLowerCase();
+
+// Use .filter() to create a new array of users that matches the search keywords. 
+
+const filtered = user.filter(u => u.name.toLowerCase().includes(keyword));
+
+renderUsers(filtered);
+
+});
