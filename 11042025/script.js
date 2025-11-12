@@ -46,3 +46,18 @@ const filtered = user.filter(u => u.name.toLowerCase().includes(keyword));
 renderUsers(filtered);
 
 });
+
+document.getElementById("sortAcc").addEventListener("click", () => {
+    const sorted = [...user].sort((a,b) => a.name.localeCompare(b.name));
+
+    renderUsers(sorted);
+})
+
+
+document.getElementById("sortDesc").addEventListener( "click",() =>
+{
+const sorted = [...user].sort((a.b) => b.namelocaleCompare(a.name));
+
+renderUsers(sorted);
+
+})

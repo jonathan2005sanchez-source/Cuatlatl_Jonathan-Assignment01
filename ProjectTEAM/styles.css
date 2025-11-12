@@ -4,7 +4,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #a9a8a8;
+  background-color: #bebbbb;
   padding-top: 70px; /* space for nav bar if you have one */
 }
 /* Navigation Bar */
@@ -88,8 +88,8 @@ nav a:hover {
 }
 /* Footer styling */
 footer {
-  background: #182848;
-  color: white;
+  background: #a1a1a1;
+ color: rgb(201, 201, 201);
   text-align: center;
   padding: 15px 0;
   width: 100%;
@@ -107,6 +107,7 @@ footer {
 
 /* HOMEPAGESECTION END */
 /* Jonathan PAGE*/
+<<<<<<< HEAD
 
 .jon01 {
   background-image: url(adosolute\ cinema.jpg);
@@ -169,4 +170,124 @@ footer {
 
 .marquisfooter {
   margin: 10px 0;
+=======
+.image-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* space between image and text */
+  padding: 20px;
+}
+
+.image-text img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.image-text p {
+  font-size: 18px;
+  color: #333;
+}
+
+p {color: black;}
+
+/* contacts */
+
+.contact-section {
+  background: rgba(24, 40, 72, 0.95);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  text-shadow: #333;
+}
+
+.contact-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: #243b67;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #4e9af1;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #dcdcdc;
+}
+
+/* Edwin
+ */
+
+ body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #182848;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* About Food Section */
+.about-food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  gap: 40px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.about-food img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.food-text {
+  max-width: 500px;
+}
+
+.food-text h2 {
+  color: #182848;
+  margin-bottom: 10px;
+}
+
+.food-text p {
+  line-height: 1.6;
+  font-size: 16px;
+>>>>>>> db185eddff1e00097e14219ea0e9a7696b0828ea
 }
