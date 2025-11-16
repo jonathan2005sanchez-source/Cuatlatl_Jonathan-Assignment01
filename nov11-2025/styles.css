@@ -1,0 +1,220 @@
+/* ===== General Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-image: -moz-linear-gradient(white , blackS);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header Section ===== */
+#header {
+  text-align: center;
+  padding: 20px;
+  background: #4fa1f9;
+  color: white;
+}
+
+#header nav {
+  margin-top: 5px;
+}
+
+#header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hover effect for navigation */
+#header nav a:hover {
+  color: #cce3ff;
+}
+
+/* ===== Section Styles ===== */
+section {
+  padding: 30px 20px;
+  background: white;
+  margin: 15px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  text-align: center;
+  color: #2b6cb0;
+  font-size: xx-large;
+}
+
+/* ===== About Me Section ===== */
+.about-content {
+  text-align: center;
+}
+
+.about-content img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* ===== Projects Section ===== */
+.projects {
+  display: grid;
+  gap: 10px;
+}
+
+.project {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Hover effect for project cards */
+.project:hover {
+  transform: scale(1.03);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.skills li {
+  background: #e6f0ff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+/* Hover effect for skills */
+.skills li:hover {
+  background: #cce3ff;
+}
+
+/* ===== Contact Section ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Focus effect */
+input:focus, textarea:focus {
+  border-color: #2b6cb0;
+  outline: none;
+}
+
+.project video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hover effect for button */
+button {
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #234a86;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #555;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsive Design ===== */
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet (max-width: 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop (above 900px) */
+@media (min-width: 901px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* === Social Media Links === */
+.socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  color: black;
+  font-size: 1.6em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Hover effects for each platform */
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.tiktok:hover { color: purple; }
+.linkedin:hover { color: #0e76a8; }
+.youtube:hover { color: #ff0000; }
+.instagram:hover { color: #e1306c; }

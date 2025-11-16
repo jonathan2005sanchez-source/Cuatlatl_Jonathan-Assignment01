@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #85acf4;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#notes-container {
+max-width: 600px;
+margin: 20px auto;
+padding: 10px;
+background: #ffffff;
+border-radius: 8px;
+min-height: 100px;
+}
+
+.input-area {
+    display: FLEX;
+    max-width: 600px;
+    margin: 20px auto;
+
+}
+
+.note {
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+#note-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #9c9c9c;
+    border-radius: 4px;
+}
+
+#summit-button {
+    padding: 10px 15px;
+    background-color: #039b03;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.note span {
+    flex-grow: 1;
+}
+
+.note button {
+    margin-left: 5px;
+    border: none;
+    padding:4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #fff;
+}
+
+.deletc-btn {
+    background: #f44336;
+    color: #fff;
+}
