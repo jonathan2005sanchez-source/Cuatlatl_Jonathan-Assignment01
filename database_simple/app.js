@@ -55,3 +55,55 @@ submitButton.addEventListener('click', () => {
   // After adding the note to Firebase, clear the input box for the next note.
   noteInput.value = '';
 });
+
+notesRef.on('child_added',(snapshot) => {
+
+  const noteId = snapshot.key;
+  const newNote = snapshot.val();
+
+const notesElement = createNoteElement(noteId, newNote.text);
+
+notesContainer.prepend(notesElement);
+
+})
+
+
+function createNoteElement(noteId, noteText) {
+
+  // OUter box
+  const noteElement = document.createElement('div');
+  noteElement.classList.add('note'); 
+  noteElement.setAttribute('data-id', noteId)
+
+  // text
+  const noteTextElement = document.createElement('span'); 
+  noteTextElement.textContent = noteText;
+  noteElement.appendChild(noteTextElement);
+ 
+  // create button
+const deleteButton = document.createElement('button');
+deleteButton.classList.add('delete-btn');
+deleteButton.innerText = 'Delete';
+
+// function of deleting a note
+deleteButton.addEventListener('click' , () => {
+  deleteNote(noteId);
+});
+
+// makes deletebutton????
+noteElement.appendChild(deleteButton);
+
+return noteElement;
+
+}
+
+function deleteNote(noteId) {
+  // reference to specific note to be deleted 
+  const specificNoteRef = database.ref('notes/' + noteId);
+
+  // remove the note from the database
+specificNoteRef.remove();
+
+
+
+} 
