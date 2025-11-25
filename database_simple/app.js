@@ -90,6 +90,22 @@ deleteButton.addEventListener('click' , () => {
   deleteNote(noteId);
 });
 
+//Creating Edit Button.....
+const editButton = document.createElement('button');
+
+editButton.classList.add('edit-btn');
+
+editButton.innerText = 'Edit';
+
+editButton.addEventListener('click', () => {
+  editNote(noteId,noteText);
+});
+noteElement.appendChild(editButton);
+
+
+
+
+
 // makes deletebutton????
 noteElement.appendChild(deleteButton);
 
@@ -103,7 +119,35 @@ function deleteNote(noteId) {
 
   // remove the note from the database
 specificNoteRef.remove();
-
-
-
 } 
+
+notesRef.on('child_removed', (snapshot) => {
+
+const noteId = snapshot.key;
+
+const noteElement = document.querySelector( `div[data-id="${noteId}"]` );
+
+if (noteElement) {
+  noteElement.remove();
+}
+
+});
+
+// editing notes
+function editNote (noteId,currentText) {
+// building in tool that forces a small popup window to appear 
+  const newText = prompt('Fix your typo:', currentText);
+
+
+  if(newText && newText.trim() !=='') {
+
+const specificNoteRef = datatbase.ref('notes/' +noteId)
+
+specificNoteRef.update({
+  text : newText
+})
+
+  }
+
+
+}
