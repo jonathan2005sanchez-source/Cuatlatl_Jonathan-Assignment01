@@ -141,13 +141,22 @@ function editNote (noteId,currentText) {
 
   if(newText && newText.trim() !=='') {
 
-const specificNoteRef = datatbase.ref('notes/' +noteId)
+const specificNoteRef = database.ref('notes/'+noteId)
 
 specificNoteRef.update({
   text : newText
 })
 
+  }}
+
+notesRef.on('child_changed', (snapshot) => {
+  const noteId = snapshot.key;
+  const updatedNote = snapshot.val();
+
+  const noteElement = document.querySelector(`div[data-id="${noteId}"]`);
+
+  if (noteElement) {
+    noteElement.querySelector('span').textContent = updatedNote.text;
   }
 
-
-}
+})
