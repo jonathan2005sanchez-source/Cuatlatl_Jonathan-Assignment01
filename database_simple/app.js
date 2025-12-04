@@ -98,7 +98,8 @@ editButton.classList.add('edit-btn');
 editButton.innerText = 'Edit';
 
 editButton.addEventListener('click', () => {
-  editNote(noteId,noteText);
+  const currentText = noteElement.querySelector('span').innerText;
+  editNote(noteId,currentText);
 });
 noteElement.appendChild(editButton);
 
