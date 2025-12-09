@@ -84,6 +84,7 @@ img {
   margin-top: 20px;
 }
 
+/* contact card */
 .contact-form {
   text-align: center;
   padding: 30px;
@@ -128,7 +129,8 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-/* end of cards */
+/* end of student cards */
+
 .contact-section h2 {
   margin-bottom: 20px;
   color: #000000;
